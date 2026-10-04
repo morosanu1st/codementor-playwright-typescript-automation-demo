@@ -1,0 +1,24 @@
+{
+  "productInstanceId": "PROD-2026-10482",
+  "sourceSystem": "AODL-INGEST",
+  "receivedAt": "2026-10-04T10:15:00Z",
+  "attributes": {
+    "productName": "Enterprise Coverage Bundle",
+    "planCode": "COB-ENT-01",
+    "effectiveDate": "2026-11-01",
+    "terminationDate": "2027-10-31",
+    "subscriberId": "SUB-77821",
+    "dependentCount": 2,
+    "premiumAmount": 412.50,
+    "currency": "USD",
+    "cobraEligible": true,
+    "qualifyingEvent": "termination_of_employment",
+    "eventDate": "2026-09-15",
+    "noticeDueDate": "2026-10-15"
+  },
+  "formFields": {
+    "employer_name": "Acme Benefits Admin",
+    "group_number": "GRP-9901",
+    "coverage_tier": "employee_plus_family"
+  }
+}

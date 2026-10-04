@@ -1,0 +1,22 @@
+{
+  "name": "codementor-playwright-typescript-automation-demo",
+  "version": "1.0.0",
+  "description": "Demo: Playwright + TypeScript pipeline for source attribute ingestion, COBRA UI extraction, and configurable MDR field mapping with traceability",
+  "private": true,
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "pipeline": "npx ts-node src/run-pipeline.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
+}

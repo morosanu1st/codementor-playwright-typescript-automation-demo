@@ -1,0 +1,12 @@
+{
+  "documentType": "AODL",
+  "format": "pdf-text-extract-stub",
+  "pages": 1,
+  "extractedTextBlocks": [
+    { "label": "Plan Code", "value": "COB-ENT-01" },
+    { "label": "Effective Date", "value": "2026-11-01" },
+    { "label": "Subscriber ID", "value": "SUB-77821" },
+    { "label": "Premium", "value": "412.50 USD" },
+    { "label": "Qualifying Event", "value": "termination_of_employment" }
+  ]
+}

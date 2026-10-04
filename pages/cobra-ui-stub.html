@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COBRA UI Stub — Product Instance</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 2rem;
+    }
+    h1 { font-size: 1.35rem; margin: 0 0 0.25rem; }
+    .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      max-width: 640px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 0.5rem 1rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+    .row:last-child { border-bottom: none; }
+    .label { color: var(--muted); font-size: 0.85rem; }
+    .value {
+      font-weight: 600;
+      color: var(--accent);
+      font-variant-numeric: tabular-nums;
+    }
+    .badge {
+      display: inline-block;
+      background: #0ea5e920;
+      color: var(--accent);
+      border: 1px solid #0ea5e950;
+      border-radius: 999px;
+      padding: 0.15rem 0.65rem;
+      font-size: 0.75rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" data-testid="cobra-product-panel">
+    <span class="badge">COBRA UI · Product Instance Stub</span>
+    <h1>Product Detail</h1>
+    <p class="sub">Stub page for Playwright extraction demos (MDR Tab targets)</p>
+
+    <div class="row">
+      <span class="label">Product Name</span>
+      <span class="value" id="cobra-product-name" data-field="productName">Enterprise Coverage Bundle</span>
+    </div>
+    <div class="row">
+      <span class="label">Plan Code</span>
+      <span class="value" id="cobra-plan-code" data-field="planCode">COB-ENT-01</span>
+    </div>
+    <div class="row">
+      <span class="label">Effective Date</span>
+      <span class="value" id="cobra-effective-date" data-field="effectiveDate">2026-11-01</span>
+    </div>
+    <div class="row">
+      <span class="label">Termination Date</span>
+      <span class="value" id="cobra-termination-date" data-field="terminationDate">2027-10-31</span>
+    </div>
+    <div class="row">
+      <span class="label">Subscriber ID</span>
+      <span class="value" id="cobra-subscriber-id" data-field="subscriberId">SUB-77821</span>
+    </div>
+    <div class="row">
+      <span class="label">Premium</span>
+      <span class="value" id="cobra-premium" data-field="premiumAmount">412.50</span>
+    </div>
+    <div class="row">
+      <span class="label">Qualifying Event</span>
+      <span class="value" id="cobra-qualifying-event" data-field="qualifyingEvent">termination_of_employment</span>
+    </div>
+    <div class="row">
+      <span class="label">Coverage Tier</span>
+      <span class="value" id="cobra-coverage-tier" data-field="coverageTier">employee_plus_family</span>
+    </div>
+    <div class="row">
+      <span class="label">Group Number</span>
+      <span class="value" id="cobra-group-number" data-field="groupNumber">GRP-9901</span>
+    </div>
+  </div>
+</body>
+</html>

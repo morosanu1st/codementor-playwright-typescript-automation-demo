@@ -1,0 +1,69 @@
+{
+  "version": "1.0",
+  "productInstanceKey": "productInstanceId",
+  "sources": {
+    "json": { "path": "fixtures/inbound-product.json" },
+    "aodl": { "path": "fixtures/aodl-stub.json" },
+    "cobraUi": { "page": "pages/cobra-ui-stub.html" }
+  },
+  "mappings": [
+    {
+      "sourceAttr": "attributes.productName",
+      "mdrField": "mdr_product_name",
+      "cobraSelector": "#cobra-product-name",
+      "description": "Product display name on MDR Tab"
+    },
+    {
+      "sourceAttr": "attributes.planCode",
+      "mdrField": "mdr_plan_code",
+      "cobraSelector": "#cobra-plan-code",
+      "description": "Plan / COBRA code"
+    },
+    {
+      "sourceAttr": "attributes.effectiveDate",
+      "mdrField": "mdr_effective_date",
+      "cobraSelector": "#cobra-effective-date",
+      "description": "Coverage effective date"
+    },
+    {
+      "sourceAttr": "attributes.terminationDate",
+      "mdrField": "mdr_termination_date",
+      "cobraSelector": "#cobra-termination-date",
+      "description": "Coverage end date"
+    },
+    {
+      "sourceAttr": "attributes.subscriberId",
+      "mdrField": "mdr_subscriber_id",
+      "cobraSelector": "#cobra-subscriber-id",
+      "description": "Subscriber identifier"
+    },
+    {
+      "sourceAttr": "attributes.premiumAmount",
+      "mdrField": "mdr_premium_amount",
+      "cobraSelector": "#cobra-premium",
+      "description": "Premium amount shown in UI"
+    },
+    {
+      "sourceAttr": "attributes.qualifyingEvent",
+      "mdrField": "mdr_qualifying_event",
+      "cobraSelector": "#cobra-qualifying-event",
+      "description": "COBRA qualifying event type"
+    },
+    {
+      "sourceAttr": "formFields.coverage_tier",
+      "mdrField": "mdr_coverage_tier",
+      "cobraSelector": "#cobra-coverage-tier",
+      "description": "Coverage tier from inbound form"
+    },
+    {
+      "sourceAttr": "formFields.group_number",
+      "mdrField": "mdr_group_number",
+      "cobraSelector": "#cobra-group-number",
+      "description": "Employer group number"
+    }
+  ],
+  "output": {
+    "mdrTabFile": "output/mdr-tab-fields.json",
+    "traceabilityLog": "output/traceability-log.json"
+  }
+}
